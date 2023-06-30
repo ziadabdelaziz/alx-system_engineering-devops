@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# terminate a process
+for pid in $(pgrep bash);
+do
+	kill $pid
+done
