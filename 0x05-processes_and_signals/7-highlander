@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# specify response to SIGTERM
+on_sigterm() {
+	echo "I am invincible!!!"
+}
+
+# Trap the SIGTERM signal
+trap on_sigterm SIGTERM
+
+# display "To infinity and beyond" infinitly with delay 2 seconds
+while true
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
