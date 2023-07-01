@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# using -KILL signal insead of SIGTERM to override trap
+pkill -f -KILL '7-highlander'
