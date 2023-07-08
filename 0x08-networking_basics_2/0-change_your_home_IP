@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Update /etc/hosts file to map localhost to 127.0.0.2
+sudo sed -i 's/127.0.0.1 localhost/127.0.0.2 localhost/' /etc/hosts
+
+# Update /etc/resolv.conf file to set DNS server for facebook.com
+sudo sed -i 's/nameserver .*/nameserver 8.8.8.8/' /etc/resolv.conf
