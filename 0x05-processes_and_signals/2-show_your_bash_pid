@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-#display all processes
-ps -aux --forest | grep "bash"
